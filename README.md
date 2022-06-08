@@ -99,35 +99,15 @@ how (hot | cold) is it
 Third. To get permission from the browser to use the microphone, a https-protocoll is nedded.
 This has to be changed in the settings.js-file, which is placed under the home directory.
 
-This screenshot shows the changes which have to be made.
+This screenshot shows the changes which have to be made. This will enable the https-protocoll.
+
 ![](images/noderedhttps.PNG)
 
-
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> It should go over several rows?
-> This is how you do it.
-
-## FAQs
+### Documentation
 ***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer of the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer of the third question with *italic words*.
-4. **Fourth question in bold**
-
-
-A list of technologies used within the project:
-* [Technologie name](https://example.com): Version 12.3 
-* [Technologie name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
-
+To get more information about rhasspy and node-red, use this links. Both have a verry handy and organized documentation which describes a lot of problems and how to get started.
+* [Rhasspy](https://rhasspy.readthedocs.io/en/latest/)
+* [Node-Red](https://nodered.org/)
 
 | Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
 |:--------------|:-------------:|--------------:|
