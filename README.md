@@ -32,8 +32,7 @@ To request the outside temperature
 - what's the temperature
 - how (hot | cold) is it
 
-### Screenshot
-![Image text](images/rhasspysettings.PNG)
+
 
 ## Use and future extentions
 ***
@@ -61,7 +60,8 @@ For the installlation of rhasspy and node-red, a shell-script calles va_install 
 
 ### Installation
 ***
-Clone repository and install rhasspy and node-red via shell-script va_install
+Clone repository and install rhasspy and node-red via shell-script 'va_install'.
+
 In addition the script puts rhasspy into the autostart mode
 ```
 $ git clone https://github.com/lbuetgit/OSSLab_Final_VoiceAssistent.git
@@ -80,12 +80,16 @@ $ cd OSSLab_Final_VoiceAssistent/.node-red
 $ node-red
 ```
 
-
-
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-
 ## Settings
 ***
+To use the voice assistent properly, some additional settings has to be made.
+
+First, all the engines for the different tasks which rhasspy does, has to be choosen.
+The following screenshot shows the settings which gave the best results.
+![](images/rhasspysettings.PNG)
+
+First 
+
 Give instructions on how to collaborate with your project.
 > Maybe you want to write a quote in this part. 
 > It should go over several rows?
