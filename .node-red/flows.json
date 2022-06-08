@@ -1,0 +1,635 @@
+[
+    {
+        "id": "76f2a81b887eafeb",
+        "type": "tab",
+        "label": "Websocket",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "46b2f8624a5087f3",
+        "type": "tab",
+        "label": "Wetterdaten abfragen",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3ed9a3fe7fa97e24",
+        "type": "tab",
+        "label": "Handysteuerung",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f51250abd6c5ce43",
+        "type": "tab",
+        "label": "Uhrzeit",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "541d94e2a8a24745",
+        "type": "websocket-listener",
+        "path": "ws://localhost:12101/api/events/wake",
+        "wholemsg": "false"
+    },
+    {
+        "id": "6a240638238f055f",
+        "type": "websocket-listener",
+        "path": "ws://172.20.10.12:12101/api/events/intent",
+        "wholemsg": "true"
+    },
+    {
+        "id": "70a9ed9365f02f12",
+        "type": "websocket-listener",
+        "path": "",
+        "wholemsg": "true"
+    },
+    {
+        "id": "d88ca32b5f7ab93f",
+        "type": "ui_group",
+        "name": "Wake Up",
+        "tab": "5f0b8e31fe50179b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5f0b8e31fe50179b",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cc60be804b149251",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7b33771d75c79a3f",
+        "type": "websocket in",
+        "z": "76f2a81b887eafeb",
+        "name": "",
+        "server": "6a240638238f055f",
+        "client": "",
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "d279f2438e8dda81"
+            ]
+        ]
+    },
+    {
+        "id": "2ce9a2aa9a6ebad9",
+        "type": "websocket in",
+        "z": "76f2a81b887eafeb",
+        "name": "",
+        "server": "541d94e2a8a24745",
+        "client": "",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "d2a1ea1311cf743f"
+            ]
+        ]
+    },
+    {
+        "id": "d2a1ea1311cf743f",
+        "type": "link out",
+        "z": "76f2a81b887eafeb",
+        "name": "wakeword",
+        "mode": "link",
+        "links": [
+            "3e529b50f8baf693",
+            "abcdd2715594bca3"
+        ],
+        "x": 695,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "84c55c23798b2141",
+        "type": "http request",
+        "z": "76f2a81b887eafeb",
+        "name": "http://localhost:12101/api/text-to-speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 520,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c0f96953720e7d9",
+        "type": "link in",
+        "z": "76f2a81b887eafeb",
+        "name": "Audio_Ausgabe",
+        "links": [
+            "57a7963c1506e4cd",
+            "d5c114e808e5d4a1",
+            "51dea5c48e19ccc4",
+            "bc59a60d7a37af23"
+        ],
+        "x": 195,
+        "y": 540,
+        "wires": [
+            [
+                "84c55c23798b2141"
+            ]
+        ]
+    },
+    {
+        "id": "9c1798fda4cefe2e",
+        "type": "link out",
+        "z": "76f2a81b887eafeb",
+        "name": "Muell",
+        "mode": "link",
+        "links": [
+            "ae543e3ae4b54533"
+        ],
+        "x": 995,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d279f2438e8dda81",
+        "type": "switch",
+        "z": "76f2a81b887eafeb",
+        "name": "",
+        "property": "intent.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ChangeLightState",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Get_Time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Get_Date",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "GetTemperature",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Get_Witz",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 810,
+        "y": 300,
+        "wires": [
+            [],
+            [
+                "43ad8a03fc453a1b"
+            ],
+            [
+                "43ad8a03fc453a1b"
+            ],
+            [
+                "7b9ff75a7f3932ea"
+            ],
+            [
+                "4b47b829b5d767ac"
+            ],
+            [
+                "9c1798fda4cefe2e",
+                "bfd809905a07a4fa"
+            ]
+        ]
+    },
+    {
+        "id": "43ad8a03fc453a1b",
+        "type": "link out",
+        "z": "76f2a81b887eafeb",
+        "name": "Uhrzeit",
+        "mode": "link",
+        "links": [
+            "273efd3f71bbc2bf",
+            "ae543e3ae4b54533"
+        ],
+        "x": 995,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7b9ff75a7f3932ea",
+        "type": "link out",
+        "z": "76f2a81b887eafeb",
+        "name": "Wetter",
+        "mode": "link",
+        "links": [
+            "191d2f269a0a3ca2",
+            "ae543e3ae4b54533"
+        ],
+        "x": 995,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4b47b829b5d767ac",
+        "type": "link out",
+        "z": "76f2a81b887eafeb",
+        "name": "Witz",
+        "mode": "link",
+        "links": [
+            "ae543e3ae4b54533",
+            "c713d84ffe78b8b9"
+        ],
+        "x": 995,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bfd809905a07a4fa",
+        "type": "function",
+        "z": "76f2a81b887eafeb",
+        "name": "",
+        "func": "const inp = msg.payload;\nmsg.payload = \"I didn't understand you\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 480,
+        "wires": [
+            [
+                "84c55c23798b2141"
+            ]
+        ]
+    },
+    {
+        "id": "7cdf43da117aded0",
+        "type": "function",
+        "z": "46b2f8624a5087f3",
+        "name": "",
+        "func": "var intent;\ntry\n{\n intent = msg.payload.intent;\n}\ncatch (err)\n{\n intent = msg.intent;\n}\nif(intent.name == \"GetTemperature\")\n{\n    msg = { payload: \"1\"};\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "842b438c39c40f69"
+            ]
+        ]
+    },
+    {
+        "id": "458ca149f80d1b69",
+        "type": "function",
+        "z": "46b2f8624a5087f3",
+        "name": "",
+        "func": "const inp = msg.payload;\nmsg.payload = \"The outside temperature is \" + inp.tempc + \" degrees celsius\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 240,
+        "wires": [
+            [
+                "bc59a60d7a37af23"
+            ]
+        ]
+    },
+    {
+        "id": "191d2f269a0a3ca2",
+        "type": "link in",
+        "z": "46b2f8624a5087f3",
+        "name": "wetter_intent",
+        "links": [
+            "7b9ff75a7f3932ea"
+        ],
+        "x": 255,
+        "y": 240,
+        "wires": [
+            [
+                "7cdf43da117aded0"
+            ]
+        ]
+    },
+    {
+        "id": "bc59a60d7a37af23",
+        "type": "link out",
+        "z": "46b2f8624a5087f3",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "57c4cbe6480ec5ee",
+            "9c0f96953720e7d9"
+        ],
+        "x": 1135,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "842b438c39c40f69",
+        "type": "openweathermap",
+        "z": "46b2f8624a5087f3",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "Pohang",
+        "country": "Republik Korea",
+        "language": "en",
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "458ca149f80d1b69"
+            ]
+        ]
+    },
+    {
+        "id": "8dae7bce851f8701",
+        "type": "http request",
+        "z": "3ed9a3fe7fa97e24",
+        "name": "",
+        "method": "POST",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/speech-to-intent",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 770,
+        "y": 160,
+        "wires": [
+            [
+                "48de229b625d35b8"
+            ]
+        ]
+    },
+    {
+        "id": "31dd79e23fef6d20",
+        "type": "ui_microphone",
+        "z": "3ed9a3fe7fa97e24",
+        "name": "",
+        "group": "d88ca32b5f7ab93f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "maxLength": 5,
+        "maxRecogLength": 5,
+        "timeslice": 0,
+        "press": "click",
+        "mode": "audio",
+        "interimResults": false,
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "8dae7bce851f8701"
+            ]
+        ]
+    },
+    {
+        "id": "48de229b625d35b8",
+        "type": "debug",
+        "z": "3ed9a3fe7fa97e24",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "57a7963c1506e4cd",
+        "type": "link out",
+        "z": "f51250abd6c5ce43",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "57c4cbe6480ec5ee",
+            "9c0f96953720e7d9"
+        ],
+        "x": 1095,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "273efd3f71bbc2bf",
+        "type": "link in",
+        "z": "f51250abd6c5ce43",
+        "name": "uhrzeit_intent",
+        "links": [
+            "43ad8a03fc453a1b"
+        ],
+        "x": 235,
+        "y": 340,
+        "wires": [
+            [
+                "d800c0b08d0087b4"
+            ]
+        ]
+    },
+    {
+        "id": "d800c0b08d0087b4",
+        "type": "function",
+        "z": "f51250abd6c5ce43",
+        "name": "",
+        "func": "\nvar inp;\ntry\n{\n    inp = msg.payload.intent ;  \n}\ncatch(err)\n{\n     inp = msg.intent;\n}\n\n\nmsg = inp;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 340,
+        "wires": [
+            [
+                "f704b4c3b39b606d"
+            ]
+        ]
+    },
+    {
+        "id": "924d6dc02e4e6cce",
+        "type": "function",
+        "z": "f51250abd6c5ce43",
+        "name": "Uhrzeit/Datum Filter",
+        "func": "var output = { payload: \"\" };\nvar tag;\nvar monat;\nvar tag_int = parseInt(msg.mydom);\nvar stunde;\n\nif (msg.name == \"Get_Time\")\n{\n stunde = parseInt(msg.myhourpm) +1;\n  output.payload = \"it's\" + stunde + \":\" + msg.myminute + \", \" + msg.mypm; \n  msg = output;\n  return msg;  \n    \n}\n\nif (msg.name == \"Get_Date\")\n{\n   \n   switch ( msg.mydom)\n   {\n       case \"1\": tag = \"first \"; break;\n       case \"2\": tag = \"second \"; break;\n       case \"3\": tag = \"third \"; break;\n       case \"5\": tag = \"fifth \"; break;\n       case \"25\": tag = \"twentyfifth \"; break;\n       default: tag = msg.mydom + \"th \"; break\n       \n       \n   }\n   \n    output.payload = \"Today is the \" + tag + \"of\" + msg.mymonth + \" \" + msg.myyear ;\n      msg = output;\n  return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 340,
+        "wires": [
+            [
+                "57a7963c1506e4cd"
+            ]
+        ]
+    },
+    {
+        "id": "f704b4c3b39b606d",
+        "type": "simpletime",
+        "z": "f51250abd6c5ce43",
+        "name": "",
+        "mydate": true,
+        "myymd": true,
+        "myyear": true,
+        "mymonth": true,
+        "mymonthn": true,
+        "mydom": true,
+        "mydoy": true,
+        "myday": true,
+        "myhourpm": true,
+        "myhour": true,
+        "mytime": true,
+        "mytimes": true,
+        "myminute": true,
+        "myminutes": true,
+        "mysecond": true,
+        "mymillis": true,
+        "myepoch": true,
+        "myrawdate": true,
+        "mypm": true,
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "924d6dc02e4e6cce"
+            ]
+        ]
+    }
+]
