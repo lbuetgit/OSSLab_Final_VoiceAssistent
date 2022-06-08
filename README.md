@@ -86,9 +86,10 @@ To use the voice assistent properly, some additional settings has to be made.
 
 First, all the engines for the different tasks which rhasspy does, has to be choosen.
 The following screenshot shows the settings which gave the best results.
+
 ![](images/rhasspysettings.PNG)
 
-First 
+
 
 Give instructions on how to collaborate with your project.
 > Maybe you want to write a quote in this part. 
