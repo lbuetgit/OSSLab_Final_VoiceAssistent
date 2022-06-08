@@ -56,7 +56,7 @@ A list of technologies used within the project:
 A little intro about the installation. 
 ```
 $ git clone https://github.com/lbuetgit/OSSLab_Final_VoiceAssistent.git
-$ cd ../path/to/the/file
+$ cd OSSLab_Final_VoiceAssistent/.node-red
 $ npm install
 $ npm start
 ```
