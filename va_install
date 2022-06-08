@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# This is the explanation
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+
+# Install Rhasspy with docker
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sudo sh get-docker.sh
+
+sudo usermod -a -G docker $USER
+
+sudo docker pull rhasspy/rhasspy
+
+sudo docker run -d -p 12101:12101 --name rhasspy --restart unless-stopped -v "$HOME/.config/rhasspy/profiles:/profiles" -v "/etc/localtime:/etc/localtime:ro" --device /dev/snd:/dev/snd rhasspy/rhasspy --user-profiles /profiles --profile en
+
+echo 'successfully installed rhasspy'
+
+
+# Install node-red
+
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+echo 'successfully installed node-red'
