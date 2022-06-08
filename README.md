@@ -9,7 +9,7 @@ Voice Assistent with Rhasspy and Node-Red
 
 ## Table of Contents
 1. [General Info](#general-info)
-2. [Technologies](#technologies)
+2. [Use and future extentions](#Use and future extentions)
 3. [Installation](#installation)
 4. [Collaboration](#collaboration)
 5. [FAQs](#faqs)
@@ -40,12 +40,18 @@ To request the outside temperature
 
 ## Use and future extentions
 ***
+This project can be used to implement an own voice assistent on a raspberry pi. This raspberry pi can be placed in any room where it is usefull to ask for several daily things, like the weather or the time. Futhermore the current implemented commands can be extended. As described, this is just a basic version, but since this groundwork is already done, it is verry convinient to extend the functionalities now. For example: controlling the gpio-ports or switching the roomlight with voice-commands could be the next steps. However for performance reasons it is recomended to use at least a raspberry pi 3B+.
+
+Because the equipment currently available has no microphone, this implementation is using a website which records the voice commands.
+
+
 A list of technologies used within the project:
 * [Technologie name](https://example.com): Version 12.3 
 * [Technologie name](https://example.com): Version 2.34
 * [Library name](https://example.com): Version 1234
 
-## Installation
+## How to get started
+### Installation
 ***
 A little intro about the installation. 
 ```
@@ -54,6 +60,9 @@ $ cd ../path/to/the/file
 $ npm install
 $ npm start
 ```
+
+
+
 Side information: To use the application in a special environment use ```lorem ipsum``` to start
 
 ## Collaboration
