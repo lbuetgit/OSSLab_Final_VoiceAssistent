@@ -81,7 +81,7 @@ The following screenshot shows the settings which gave the best results.
 
 ![](images/rhasspysettings.PNG)
 
-Second, the sentences which we want the voice assistent to understand, have to be defined. Therefore, under the tab 'sentences', the following code has to be stored.
+Second, the sentences which we want the voice assistent to understand, have to be defined. Therefore, under the tab 'sentences', the following code has to be added.
 ```
 [Get_Time]
 what time is it
@@ -94,9 +94,13 @@ tell me the date
 [GetTemperature]
 what's the temperature
 how (hot | cold) is it
-
 ```
 
+Third. To get permission from the browser to use the microphone, a https-protocoll is nedded.
+This has to be changed in the settings.js-file, which is placed under the home directory.
+
+This screenshot shows the changes which have to be made.
+![](images/noderedhttps.PNG)
 
 
 Give instructions on how to collaborate with your project.
