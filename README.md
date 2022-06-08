@@ -32,15 +32,12 @@ To request the outside temperature
 - what's the temperature
 - how (hot | cold) is it
 
-
-
-
 ### Screenshot
 ![Image text](images/rhasspysettings.PNG)
 
 ## Use and future extentions
 ***
-This project can be used to implement an own voice assistent on a raspberry pi. This raspberry pi can be placed in any room where it is usefull to ask for several daily things, like the weather or the time. Futhermore the current implemented commands can be extended. As described, this is just a basic version, but since this groundwork is already done, it is verry convinient to extend the functionalities now. For example: controlling the gpio-ports or switching the roomlight with voice-commands could be the next steps. However for performance reasons it is recomended to use at least a raspberry pi 3B+.
+This project can be used to implement an own voice assistent on a raspberry pi. This raspberry pi can be placed in any room where it is usefull to ask for several daily things, like the weather or the time. Futhermore the current implemented commands can be extended. As described, this is just a basic version, but since this groundwork is already done, it is convinient to extend the functionalities. For example: controlling the gpio-ports or switching the roomlight with voice-commands could be the next steps. However for performance reasons it is recomended to use at least a raspberry pi 3B+.
 
 Because the equipment currently available has no microphone, this implementation is using a website which records the voice commands.
 
@@ -51,21 +48,43 @@ A list of technologies used within the project:
 * [Library name](https://example.com): Version 1234
 
 ## How to get started
+
+### Architecture and some backround
+
+Voice Assistants consists of many individual parts. In the beginning an input is expected. In case of voice assistants this is an audio recording. In the end any output should be made. Between these two steps a lot of other things have to take place. This includes the following steps: Audio Recording, Wake Word, Speech to Text, Intent Recognition, Text to Speech, Audio Playing, Dialogue Management.
+For all these steps in the last years a lot of open-source software has been developed. One of them is a voice assistant service called Rhasspy. With this it is possible to do all these steps offline on the raspberry pi. Rhasspy is installed via docker as a container, so it is easy to organize it. 
+
+However, for some of these steps an additional software is required. Node-Red takes over the steps intent recognition and dialogue management. Rhasspy offers some convenient ways to communicate with other software. Those are MQTT, http-requests and websockets.
+Node-Red is a programming tool which provides a browser-based editor. Within this editor you can create program flows by wiring together different nodes. Function nodes can be used to implement java-script code.
+For the installlation of rhasspy and node-red, a shell-script calles va_install is provided. 
+
+
 ### Installation
 ***
-A little intro about the installation. 
+Clone repository and install rhasspy and node-red via shell-script va_install
+In addition the script puts rhasspy into the autostart mode
 ```
 $ git clone https://github.com/lbuetgit/OSSLab_Final_VoiceAssistent.git
+$ cd OSSLab_Final_VoiceAssistent
+$ ./va_install
+```
+Install all node.js dependencies and reboot your raspberry pi
+```
 $ cd OSSLab_Final_VoiceAssistent/.node-red
 $ npm install
-$ npm start
+$ sudo reboot
+```
+Start node-red
+```
+$ cd OSSLab_Final_VoiceAssistent/.node-red
+$ node-red
 ```
 
 
 
 Side information: To use the application in a special environment use ```lorem ipsum``` to start
 
-## Collaboration
+## Settings
 ***
 Give instructions on how to collaborate with your project.
 > Maybe you want to write a quote in this part. 
