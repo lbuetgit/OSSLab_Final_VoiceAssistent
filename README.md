@@ -36,7 +36,7 @@ To request the outside temperature
 
 
 ### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
+![Image text](images/rhasspysettings.PNG)
 
 ## Use and future extentions
 ***
