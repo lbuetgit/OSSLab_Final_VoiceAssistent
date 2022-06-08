@@ -55,7 +55,7 @@ A list of technologies used within the project:
 ***
 A little intro about the installation. 
 ```
-$ git clone https://example.com
+$ git clone https://github.com/lbuetgit/OSSLab_Final_VoiceAssistent.git
 $ cd ../path/to/the/file
 $ npm install
 $ npm start
