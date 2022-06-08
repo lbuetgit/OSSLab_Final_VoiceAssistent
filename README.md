@@ -18,6 +18,20 @@ Voice Assistent with Rhasspy and Node-Red
 ***
 This project contains a basic version of a voice assistent like it is known from cmmercial companies. Popular ones are Alexa (Amazon), Cortana (Microsoft), Google Assistant (Google) and Siri (Apple). All these voice assistants have in common that they need an internet connection to work. However, this also has disadvantages. Especially in terms of data security. Based on this motivation, this offline-capable voice assistant is created, which does not require an internet connection for the evaluation of the received commands.
 
+The voice assistent can handle the following commands in this version:
+
+To request the time:
+- what time is it
+- tell me the time
+
+To request the date:
+- what's the date today
+- tell me the date
+
+To request the outside temperature
+- what's the temperature
+- how (hot | cold) is it
+
 
 
 
