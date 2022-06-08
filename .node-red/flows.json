@@ -10,7 +10,7 @@
     {
         "id": "46b2f8624a5087f3",
         "type": "tab",
-        "label": "Wetterdaten abfragen",
+        "label": "Weather data",
         "disabled": false,
         "info": "",
         "env": []
@@ -18,7 +18,7 @@
     {
         "id": "3ed9a3fe7fa97e24",
         "type": "tab",
-        "label": "Handysteuerung",
+        "label": "Microphone",
         "disabled": false,
         "info": "",
         "env": []
@@ -26,7 +26,7 @@
     {
         "id": "f51250abd6c5ce43",
         "type": "tab",
-        "label": "Uhrzeit",
+        "label": "Time and date",
         "disabled": false,
         "info": "",
         "env": []
@@ -485,7 +485,7 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 770,
+        "x": 690,
         "y": 160,
         "wires": [
             [
@@ -529,7 +529,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1010,
-        "y": 120,
+        "y": 160,
         "wires": []
     },
     {
@@ -573,7 +573,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
+        "x": 420,
         "y": 340,
         "wires": [
             [
@@ -586,7 +586,7 @@
         "type": "function",
         "z": "f51250abd6c5ce43",
         "name": "Uhrzeit/Datum Filter",
-        "func": "var output = { payload: \"\" };\nvar tag;\nvar monat;\nvar tag_int = parseInt(msg.mydom);\nvar stunde;\n\nif (msg.name == \"Get_Time\")\n{\n stunde = parseInt(msg.myhourpm) +1;\n  output.payload = \"it's\" + stunde + \":\" + msg.myminute + \", \" + msg.mypm; \n  msg = output;\n  return msg;  \n    \n}\n\nif (msg.name == \"Get_Date\")\n{\n   \n   switch ( msg.mydom)\n   {\n       case \"1\": tag = \"first \"; break;\n       case \"2\": tag = \"second \"; break;\n       case \"3\": tag = \"third \"; break;\n       case \"5\": tag = \"fifth \"; break;\n       case \"25\": tag = \"twentyfifth \"; break;\n       default: tag = msg.mydom + \"th \"; break\n       \n       \n   }\n   \n    output.payload = \"Today is the \" + tag + \"of\" + msg.mymonth + \" \" + msg.myyear ;\n      msg = output;\n  return msg;\n}\n",
+        "func": "var output = { payload: \"\" };\nvar day;\nvar month;\nvar hour;\n\nif (msg.name == \"Get_Time\")\n{\n    hour = parseInt(msg.myhourpm) +1;\n    output.payload = \"it's\" + hour + \":\" + msg.myminute + \", \" + msg.mypm; \n    msg = output;\n    return msg;  \n}\n\nif (msg.name == \"Get_Date\")\n{\n   \n   switch ( msg.mydom)\n   {\n       case \"01\": day = \"first \"; break;\n       case \"02\": day = \"second \"; break;\n       case \"03\": day = \"third \"; break;\n       case \"05\": day = \"fifth \"; break;\n       case \"06\": day = \"sixth \"; break;\n       case \"07\": day = \"seventh \"; break;\n       case \"08\": day = \"eighth \"; break;\n       case \"09\": day = \"ninth \"; break;\n       case \"25\": day = \"twentyfifth \"; break;\n       default: day = msg.mydom + \"th \"; break\n   }\n   \n   switch (msg.mymonth)\n   {\n       case \"Jan\": month = \"January \"; break;\n       case \"Feb\": month = \"February \"; break;\n       case \"Mar\": month = \"March \"; break;\n       case \"Apr\": month = \"April \"; break;\n       case \"May\": month = \"May \"; break;\n       case \"Jun\": month = \"June \"; break;\n       case \"Jul\": month = \"July \"; break;\n       case \"Aug\": month = \"August \"; break;\n       case \"Sep\": month = \"Sep \"; break;\n       case \"Oct\": month = \"October \"; break;\n       case \"Nov\": month = \"November \"; break;\n       case \"Dec\": month = \"December \"; break\n   }\n   \n    output.payload = \"Today is the \" + day + \"of\" + month + \", \" + msg.myyear;\n    \n    msg = output;\n      \n  return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",

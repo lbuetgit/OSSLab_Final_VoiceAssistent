@@ -1,7 +1,7 @@
 {
     "node-red": {
         "name": "node-red",
-        "version": "2.1.4",
+        "version": "2.2.2",
         "local": false,
         "user": false,
         "nodes": {
@@ -420,7 +420,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-play-audio",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-play-audio/play-audio.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-play-audio/play-audio.js"
             }
         }
     },
@@ -442,7 +442,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-pi-gpio",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-node-pi-gpio/36-rpi-gpio.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-node-pi-gpio/36-rpi-gpio.js"
             }
         }
     },
@@ -461,7 +461,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-ping",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-node-ping/88-ping.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-node-ping/88-ping.js"
             }
         }
     },
@@ -480,7 +480,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-random",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-node-random/random.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-node-random/random.js"
             }
         }
     },
@@ -502,7 +502,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-serialport",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-node-serialport/25-serial.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-node-serialport/25-serial.js"
             }
         }
     },
@@ -521,7 +521,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-smooth",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-node-smooth/17-smooth.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-node-smooth/17-smooth.js"
             }
         }
     },
@@ -541,7 +541,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-openweathermap",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-node-openweathermap/weather.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-node-openweathermap/weather.js"
             }
         }
     },
@@ -560,7 +560,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-ui-microphone",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-node-ui-microphone/ui_microphone.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-node-ui-microphone/ui_microphone.js"
             }
         }
     },
@@ -579,7 +579,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_base.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_base.js"
             },
             "ui_button": {
                 "name": "ui_button",
@@ -590,7 +590,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_button.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_button.js"
             },
             "ui_dropdown": {
                 "name": "ui_dropdown",
@@ -601,7 +601,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_dropdown.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_dropdown.js"
             },
             "ui_switch": {
                 "name": "ui_switch",
@@ -612,7 +612,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_switch.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_switch.js"
             },
             "ui_slider": {
                 "name": "ui_slider",
@@ -623,7 +623,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_slider.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_slider.js"
             },
             "ui_numeric": {
                 "name": "ui_numeric",
@@ -634,7 +634,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_numeric.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_numeric.js"
             },
             "ui_text_input": {
                 "name": "ui_text_input",
@@ -645,7 +645,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_text_input.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_text_input.js"
             },
             "ui_date_picker": {
                 "name": "ui_date_picker",
@@ -656,7 +656,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_date_picker.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_date_picker.js"
             },
             "ui_colour_picker": {
                 "name": "ui_colour_picker",
@@ -667,7 +667,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_colour_picker.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_colour_picker.js"
             },
             "ui_form": {
                 "name": "ui_form",
@@ -678,7 +678,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_form.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_form.js"
             },
             "ui_text": {
                 "name": "ui_text",
@@ -689,7 +689,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_text.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_text.js"
             },
             "ui_gauge": {
                 "name": "ui_gauge",
@@ -700,7 +700,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_gauge.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_gauge.js"
             },
             "ui_chart": {
                 "name": "ui_chart",
@@ -711,7 +711,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_chart.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_chart.js"
             },
             "ui_audio": {
                 "name": "ui_audio",
@@ -722,7 +722,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_audio.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_audio.js"
             },
             "ui_toast": {
                 "name": "ui_toast",
@@ -733,7 +733,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_toast.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_toast.js"
             },
             "ui_ui_control": {
                 "name": "ui_ui_control",
@@ -744,7 +744,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_ui_control.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_ui_control.js"
             },
             "ui_template": {
                 "name": "ui_template",
@@ -755,7 +755,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_template.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_template.js"
             },
             "ui_link": {
                 "name": "ui_link",
@@ -766,7 +766,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_link.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_link.js"
             },
             "ui_tab": {
                 "name": "ui_tab",
@@ -777,7 +777,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_tab.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_tab.js"
             },
             "ui_group": {
                 "name": "ui_group",
@@ -788,7 +788,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_group.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_group.js"
             },
             "ui_spacer": {
                 "name": "ui_spacer",
@@ -799,7 +799,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_spacer.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-dashboard/nodes/ui_spacer.js"
             }
         }
     },
@@ -818,7 +818,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-remote",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-remote/nodes/remote-config.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-remote/nodes/remote-config.js"
             },
             "remote-access": {
                 "name": "remote-access",
@@ -829,7 +829,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-remote",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-remote/nodes/remote-access.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-remote/nodes/remote-access.js"
             },
             "remote-notification": {
                 "name": "remote-notification",
@@ -840,7 +840,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-remote",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-remote/nodes/remote-notification.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-remote/nodes/remote-notification.js"
             },
             "remote-question": {
                 "name": "remote-question",
@@ -851,7 +851,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-remote",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-remote/nodes/remote-question.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-remote/nodes/remote-question.js"
             }
         }
     },
@@ -870,7 +870,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-say",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-say/say.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-say/say.js"
             }
         }
     },
@@ -889,7 +889,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-mic",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-mic/node-red-contrib-mic.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-mic/node-red-contrib-mic.js"
             }
         }
     },
@@ -908,7 +908,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-browser-utils",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-browser-utils/fileinject/fileinject.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-browser-utils/fileinject/fileinject.js"
             },
             "microphone": {
                 "name": "microphone",
@@ -919,7 +919,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-browser-utils",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-browser-utils/microphone/microphone.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-browser-utils/microphone/microphone.js"
             },
             "camera": {
                 "name": "camera",
@@ -930,7 +930,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-browser-utils",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-browser-utils/camera/camera.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-browser-utils/camera/camera.js"
             }
         }
     },
@@ -949,7 +949,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-sox-utils",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-sox-utils/sox_record.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-sox-utils/sox_record.js"
             },
             "sox-play": {
                 "name": "sox-play",
@@ -960,7 +960,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-sox-utils",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-sox-utils/sox_play.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-sox-utils/sox_play.js"
             },
             "sox-convert": {
                 "name": "sox-convert",
@@ -971,7 +971,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-sox-utils",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-sox-utils/sox_convert.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-sox-utils/sox_convert.js"
             }
         }
     },
@@ -990,7 +990,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-simpletime",
-                "file": "/home/pi/studienarbeit/.node-red/node_modules/node-red-contrib-simpletime/simpletime.js"
+                "file": "/home/luis/studienarbeit/.node-red/node_modules/node-red-contrib-simpletime/simpletime.js"
             }
         }
     }
