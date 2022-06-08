@@ -1,18 +1,12 @@
 # OSSLab_Final_VoiceAssistent
 Voice Assistent with Rhasspy and Node-Red
 
-# What does this project do
-
-# Why is this project useful
-
-# How to get started
-
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Use and future extentions](#Use-and-futur-extentions)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+3. [How to get started](#How-to-get-started)
+4. [Documentation](#Documentation)
+
 
 ### General Info
 ***
@@ -39,6 +33,7 @@ This project can be used to implement a voice assistent on a raspberry pi. This 
 Because the equipment currently available has no microphone, this implementation is using a website which records the voice commands.
 
 ## How to get started
+***
 
 ### Architecture and some backround
 
@@ -49,9 +44,8 @@ However, for some of these steps an additional software is required. Node-Red ta
 Node-Red is a programming tool which provides a browser-based editor. Within this editor you can create program flows by wiring together different nodes. Function nodes can be used to implement java-script code. This is reached via port 1880. (https://localhost:1880)
 For the installlation of rhasspy and node-red, a shell-script named 'va_install' is provided. 
 
-
 ### Installation
-***
+
 Clone repository and install rhasspy and node-red via shell-script 'va_install'.
 
 In addition the script puts rhasspy into the autostart mode
@@ -73,7 +67,7 @@ $ node-red
 ```
 
 ## Settings
-***
+
 To use the voice assistent properly, some additional settings has to be made.
 
 First, all the engines for the different tasks which rhasspy does, has to be choosen.
@@ -103,12 +97,8 @@ This screenshot shows the changes which have to be made. This will enable the ht
 
 ![](images/noderedhttps.PNG)
 
-### Documentation
+## Documentation
 ***
 To get more information about rhasspy and node-red, use this links. Both have a verry handy and organized documentation which describes a lot of problems and how to get started.
 * [Rhasspy](https://rhasspy.readthedocs.io/en/latest/)
 * [Node-Red](https://nodered.org/)
-
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
