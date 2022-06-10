@@ -102,3 +102,7 @@ This screenshot shows the changes which have to be made. This will enable the ht
 To get more information about rhasspy and node-red, use this links. Both have a verry handy and organized documentation which describes a lot of problems and how to get started.
 * [Rhasspy](https://rhasspy.readthedocs.io/en/latest/)
 * [Node-Red](https://nodered.org/)
+
+In this You-Tube video I give a short overview of the project and show the results.
+* [You-Tube](https://www.youtube.com/watch?v=c44tYWjxn_Y)
+
